@@ -228,11 +228,11 @@ class MaskedInput extends React.Component {
   }
 
   _keyPressPropName() {
-    if (typeof navigator !== 'undefined') {
-      return navigator.userAgent.match(/Android/i)
-      ? 'onBeforeInput'
-      : 'onKeyPress'
-    }
+    // if (typeof navigator !== 'undefined') {
+    //   return navigator.userAgent.match(/Android/i)
+    //   ? 'onBeforeInput'
+    //   : 'onKeyPress'
+    // }
     return 'onKeyPress'
   }
 
